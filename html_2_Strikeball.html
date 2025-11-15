@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Страйкбол</title>
+    <link rel="stylesheet" href="css_Strikeball.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Airsoft</div>
+            <ul>
+                <li><a href="html_1_Strikeball.html">Главная</a></li>
+                <li><a href="html_2_Strikeball.html">Галерея</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-container">
+                <img src="Airsoft_3.png" alt="Страйкбол фото 1" data-index="0" class="gallery-image active">
+                <img src="Airsoft_4.png" alt="Страйкбол фото 2" data-index="1" class="gallery-image">
+                <img src="Airsoft_5.png" alt="Страйкбол фото 3" data-index="2" class="gallery-image">
+                <img src="Airsoft_6.png" alt="Страйкбол фото 4" data-index="3" class="gallery-image">
+                <img src="Airsoft_7.png" alt="Страйкбол фото 5" data-index="4" class="gallery-image">
+                <img src="Airsoft_8.png" alt="Страйкбол фото 6" data-index="5" class="gallery-image">
+                <div class="gallery-controls">
+                    <button id="prevBtn">Предыдущее</button>
+                    <button id="nextBtn">Следующее</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Связаться с нами</h2>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Airsoft. Все права защищены.</p>
+        <p>Контакты: info@Airsoft.com</p>
+    </footer>
+
+    <script src="js_Strikeball.js"></script>
+</body>
+
+</html>

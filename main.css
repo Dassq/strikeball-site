@@ -1,0 +1,263 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('Airsoft_fon1.png') no-repeat center/cover;
+  color: #ebf1eb;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to bottom, #1a1a1a, rgba(40, 51, 40, 0.3));;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebf1eb;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #304030;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.hero {
+  text-align: center;
+  background:rgba(38, 44, 38, 0.9);
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 17px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  background: #356335;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #304030;
+}
+
+.about {
+  text-align: center;
+}
+
+.main-image {
+ width: 50%;  /* Чтобы изображение занимало всю ширину контейнера */
+  max-height:none; /* Задаем максимальную высоту изображения */
+  object-fit: cover; /*  Важно: Обрезает изображение, чтобы оно поместилось в заданные размеры, сохраняя пропорции */
+  margin: 0 auto; /* Центрируем изображение по горизонтали (если нужно) */
+  border-radius: 5px;
+}
+
+.features {
+  text-align: center;
+}
+
+.about img {
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.features .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #304030;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+.contact button {
+  background: #356335;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+
+.contact button:hover {
+  background: #304030;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* Стили для фотогалереи */
+#gallery {
+  text-align: center; /* Выравниваем заголовок и контейнер по центру */
+}
+
+.contact h2{
+    text-align: center;
+}
+
+section img{
+    width: 200px;
+    height: auto;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-image {
+ width: 50%;  /* Чтобы изображение занимало всю ширину контейнера */
+  max-height:none; /* Задаем максимальную высоту изображения */
+  object-fit: cover; /*  Важно: Обрезает изображение, чтобы оно поместилось в заданные размеры, сохраняя пропорции */
+  display: none; /* Скрываем все изображения, кроме активного */
+  margin: 0 auto; /* Центрируем изображение по горизонтали (если нужно) */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.gallery-image.active {
+  display: block;
+}
+
+.gallery-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gallery-container button {
+  background: #356335;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+
+.gallery-container button:hover {
+  background: #304030;
+}
+
+/* Модальные окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#form-message {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
